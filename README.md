@@ -57,19 +57,18 @@ fls -o 2048 disk.dd
 icat -o 2048 disk.dd 4 > recovered_file.txt
 ```
 - Recovers the file associated with inode 4.
-## SAMPLE WORKFLOW (Windows)
-```bash
-# Step 1: View partitions
-mmls.exe C:\forensics\disk.dd
+## SAMPLE WORKFLOW 
+``
+Let’s create a 10MB blank disk image and simulate file system activity:
 
-# Step 2: View file system details
-fsstat.exe -o 2048 C:\forensics\disk.dd
 
-# Step 3: List files
-fls.exe -r -o 2048 C:\forensics\disk.dd
+cd ~/Downloads
 
-# Step 4: Recover a file
-icat.exe -o 2048 C:\forensics\disk.dd 6 > C:\forensics\image.jpg
+# Step 1: Create an empty disk image
+dd if=/dev/zero of=disk.dd bs=1M count=10
+
+# Step 2: Format it with a file system (like FAT32)
+mkfs.vfat disk.dd
 ```
 ## OUTPUT:
 #### Disk Structure Analysis Results
