@@ -69,7 +69,7 @@ dd if=/dev/zero of=disk.dd bs=1M count=10
 
 # Step 2: Format it with a file system (like FAT32)
 mkfs.vfat disk.dd
-```
+
 ## OUTPUT:
 #### Disk Structure Analysis Results
 <img width="640" height="480" alt="VirtualBox_KALI_07_09_2025_18_18_54" src="https://github.com/user-attachments/assets/8184a476-0852-4ea7-b1bc-84519987030d" />
