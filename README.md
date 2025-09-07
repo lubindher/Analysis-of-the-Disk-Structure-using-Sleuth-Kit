@@ -1,4 +1,6 @@
 # Analysis-of-the-Disk-Structure-using-Sleuth-Kit
+# Lubindher S
+# 212222240056
 ## AIM:
 To analyze the disk structure of a given disk image using Sleuth Kit tools in Kali Linux.
 
@@ -70,7 +72,22 @@ fls.exe -r -o 2048 C:\forensics\disk.dd
 icat.exe -o 2048 C:\forensics\disk.dd 6 > C:\forensics\image.jpg
 ```
 ## OUTPUT:
-Disk Structure Analysis Results
+#### Disk Structure Analysis Results
+<img width="640" height="480" alt="VirtualBox_KALI_07_09_2025_18_18_54" src="https://github.com/user-attachments/assets/8184a476-0852-4ea7-b1bc-84519987030d" />
+
+#### Create Disk
+<img width="640" height="480" alt="VirtualBox_KALI_07_09_2025_18_23_14" src="https://github.com/user-attachments/assets/318d43f3-cd05-49f0-afac-026dae86bfbe" />
+
+#### fls
+
+```
+fls -f fat -o 0 disk.dd
+```
+<img width="640" height="480" alt="VirtualBox_KALI_07_09_2025_18_30_12" src="https://github.com/user-attachments/assets/7804bcc0-9ca3-443a-a1d8-32627f38123a" />
+
+<img width="640" height="480" alt="VirtualBox_KALI_07_09_2025_18_35_41" src="https://github.com/user-attachments/assets/8acb93c1-6da3-4c46-a41d-7fa6dc0d159d" />
+
+
 
 ## RESULT:
 The analysis was performed successfully using Sleuth Kit, and the disk structure was understood in detail.
